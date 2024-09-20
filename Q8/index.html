@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <div class="form">
+        <form action="">
+            <div class="type">
+                <label class="block" for="dropdown">Feedback Type:</label>
+                <select name="Compliment" id="dropdown" class="box"><option value="Compliment">Compliment</option></select>
+            </div>
+            <div class="type">
+                <label class="block" for="textarea">Message:</label>
+                <textarea name="" id="textarea" class="box"></textarea>
+            </div>
+            <div class="type radio">
+                <label class="block x" for="radio">Website Rating:</label>
+                <label id="radio"><input type="radio"><span class="spaced">Excellent</span></label>
+                <label id="radio"><input type="radio"><span class="spaced">Good</span></label>
+                <label id="radio"><input type="radio"><span class="spaced">Average</span></label>
+                <label id="radio"><input type="radio"><span class="spaced">Poor</span></label>
+            </div>
+            <div class="type">
+                <label class="block" for="num">Age (10-100):</label>
+                <input id="num" type="number" max="100" min="10">
+            </div>
+            <div class="type">
+                <label class="block" for="email">Email <span id="ast">*</span>:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="type">
+                <label class="block" for="pass">Password (min. 8 characters):</label>
+                <input type="password" id="pass" minlength="8">
+            </div>
+            <div class="type">
+                <label class="block" for="opt">Website URL (optional):</label>
+                <input type="text" id="opt">
+            </div>
+            <div class="type">
+                <input type="checkbox" id="check">
+                <label for="check">I agree to the terms and conditions</label>
+            </div>
+            <div class="type button">
+                <input type="button" value="Submit" class="btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
